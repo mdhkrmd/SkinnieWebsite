@@ -92,9 +92,9 @@
     transform: scale(1.05);
     transition: transform 0.3s ease;
     cursor: pointer;
-  }
-  
-.containerDownload{
+}
+
+.containerDownload {
     display: flex;
     padding: 15px;
     border-radius: 10px;
@@ -103,61 +103,60 @@
     justify-content: space-around;
     background-color: #F6F0E7;
     font-family: 'Google Sans';
-}
-
-.item-download-headline{
+  }
+  
+  .item-download-headline {
     font-weight: bold;
     font-size: 25pt;
     text-align: left;
     margin-bottom: 25px;
     max-width: 500px;
-}
-
-.item-download-text{
+  }
+  
+  .item-download-text {
     font-size: 15pt;
     text-align: left;
     margin-bottom: 50px;
     max-width: 500px;
-}
-
-.item-panduan-headline{
+  }
+  
+  .item-panduan-headline {
     font-weight: bold;
     font-size: 15pt;
     text-align: justify;
     margin-bottom: 25px;
     max-width: 500px;
-}
-
-.item-panduan-text{
+  }
+  
+  .item-panduan-text {
     font-size: 12pt;
     text-align: justify;
     margin-bottom: 50px;
     max-width: 500px;
     line-height: 1.5;
-}
-
-.item-download-button{
+  }
+  
+  .item-download-button {
     text-align: left;
     display: flex;
-}
-
-.item-photo-download {
+  }
+  
+  .item-photo-download {
     align-self: flex-end;
     margin-top: auto;
     margin-bottom: 0;
   }
-
-.item-download-text ul {
+  
+  .item-download-text ul {
     list-style-type: disc;
-    padding-left: 20px;
-}
-
-.item-download-text li {
-    list-style-type: decimal;
     padding-left: 20px;
   }
   
-  
+  .item-download-text li {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
 a.btn-google{color:#fff; font-family: 'Google Sans';}
 .btn{padding:10px 16px;margin:5px;font-size:18px;line-height:1.3333333;border-radius:6px;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;font-weight:500;text-decoration:none;display:inline-block}
 .btn:active:focus,.btn:focus{outline:0}
@@ -170,28 +169,73 @@ a.btn-google{color:#fff; font-family: 'Google Sans';}
 .btn-google:before{content:"";background-image:url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);background-size:cover;background-repeat:no-repeat;width:30px;height:30px;position:absolute;left:6px;top:50%;margin-top:-15px}
 .btn-google:after{content:"Unduh di";position:absolute;top:5px;left:40px;font-size:10px;font-weight:400;}
 
-.containerLangkah{
-    display: flex;
-    padding: 15px;
-    width: 80%;
-    flex-direction: column;
-    font-family: 'Google Sans';
-    justify-content: space-around;
-}
 
-.itemLangkah{
+.itemLangkah {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.gambarProcess{
-    transform: scale(0.8);
-}
-
-.textLangkah{
+    font-family: 'Google Sans';
+  }
+  
+  .itemLangkahLangkah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .photoLangkah {
+    margin-top: 20px;
+  }
+  
+  .textLangkah {
     margin-top: 25px;
     font-weight: bold;
     font-size: 14pt;
     color: #8BA577;
+  }
+.gambarProcess{
+    transform: scale(0.8);
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .containerDownload {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .item-photo-download {
+      align-self: center;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    
+    .item-download-headline,
+    .item-download-text {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .itemLangkah {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .photoLangkah {
+      margin-top: 0;
+    }
+  
+    .gambarLangkah {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .gambarProcess {
+      transform: scale(0.8);
+    }
+  }
